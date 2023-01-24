@@ -1,4 +1,14 @@
+import SearchBar from './components/SearchBar'
+
 export default function App() {
-    return <div>App</div>
+
+
+    const handleSubmit = (term) => {
+        console.log('Thank you for submit', term);
+    }
+
+    return <div>
+            <SearchBar onSubmit={handleSubmit} />
+           </div>
     
 }

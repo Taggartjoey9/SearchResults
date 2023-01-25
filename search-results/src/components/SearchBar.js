@@ -11,13 +11,13 @@ export default function SearchBar({ onSubmit }) {
     }
 
     const handleChange = (event) => {
-        console.log(event.target.value);
+        setTerm(event.target.value);
     };
 
     return( 
         <div>
             <form onSubmit={handleFormSumit}>
-                <input onChange={handleChange} />
+                <input value={term} onChange={handleChange} />
             </form>
         </div>
 

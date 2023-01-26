@@ -7,7 +7,7 @@ export default function SearchBar({ onSubmit }) {
     const handleFormSumit = (event) => {
         event.preventDefault();
 
-        onSubmit('cars');
+        onSubmit(term);
     }
 
     const handleChange = (event) => {
